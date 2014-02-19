@@ -13,7 +13,6 @@ app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 
 app.get('/', function(req, res) {
-  var count = req.query.count || 1;
   React.renderComponentToString(TodoList({initialData: data}), function(html) {
     res.render('index', { app: html, preloadData: data });
   });
