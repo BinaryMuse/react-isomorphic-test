@@ -1,0 +1,23 @@
+{
+  "name": "isomorphic-react",
+  "version": "0.0.0",
+  "description": "Testing creating an isomorphic React application",
+  "scripts": {
+    "start": "node server.js",
+    "build": "browserify -t reactify -o public/bundle.js client.js"
+  },
+  "author": "Brandon Tilley <brandon@brandontilley.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "reactify": "~0.7.0",
+    "browserify": "~3.30.1",
+    "envify": "~0.2.0",
+    "react": "~0.8.0",
+    "ejs": "~0.8.5",
+    "express": "~3.4.8",
+    "watchify": "~0.6.1",
+    "node-jsx": "~0.2.1",
+    "superagent": "~0.16.0"
+  }
+}
